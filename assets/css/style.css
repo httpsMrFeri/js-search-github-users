@@ -1,0 +1,207 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --rootColor: #6b1184;
+}
+
+.flex , .reposBox , .repoInfo{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container {
+    width: 100%;
+    max-width: 1024px;
+    min-width: 1000px;
+    margin: 20px auto;
+}
+
+.header {
+    width: 100%;
+    text-align: center;
+
+}
+
+.header h1 {
+    color: var(--rootColor);
+}
+
+.header p {
+    text-align: center;
+    width: 70%;
+    background-color: var(--rootColor);
+    padding: 5px;
+    color: white;
+    border-radius: 6px;
+    text-align: center;
+    margin: auto;
+}
+
+.searchBox {
+    width: 700px;
+    padding: 10px;
+    box-shadow: 0px 0px 10px var(--rootColor);
+    border-radius: 7px;
+    margin: auto;
+    margin-top: 30px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.searchBoxText {
+    line-height: 30px;
+    margin-bottom: 10px;
+    color: var(--rootColor);
+}
+
+.searchBoxForm input {
+    height: 25px;
+    width: 150px;
+    margin: auto;
+    border-radius: 5px;
+    border: none;
+    border-bottom: 3px solid var(--rootColor);
+    box-shadow: 0px 0px 1px var(--rootColor);
+    padding-left: 10px;
+}
+
+.searchBoxForm input[type="submit"] {
+    background-color: var(--rootColor);
+    color: white;
+    width: 60px;
+    padding: 0;
+}
+
+input:focus {
+    outline: none;
+}
+
+.userBox {
+    width: 700px;
+    margin: 20px auto;
+}
+
+.userInfo {
+    width: 100%;
+    height: 170px;
+    justify-content: space-between;
+}
+
+.infoImg {
+    width: 25%;
+    height: 100%;
+    position: relative;
+}
+
+.infoImg img {
+    width: 100%;
+    margin: auto;
+    height: 100%;
+}
+
+.infoImg p {
+    color: white;
+    width: 100%;
+    height: 25px;
+    align-items: center;
+    background-color: var(--rootColor);
+    position: absolute;
+    bottom: 0;
+    justify-content: center;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.infoText {
+    width: 70%;
+    box-shadow: 0px 0px 5px var(--rootColor);
+    border-radius: 5px;
+}
+
+.shortInfo {
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 20%;
+    border-bottom: 1px solid var(--rootColor);
+}
+
+.ul {
+    width: 100%;
+    height: 80% ;
+    padding: 0px 10px;
+    display: flex;
+    align-items: center;
+}
+
+.infoText ul {
+    width: 80%;
+    height: 80%;
+}
+
+.infoText ul li {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--rootColor);
+    list-style: none;
+    width: 100%;
+    padding-left: 10px;
+}
+
+.lastRepos {
+    width: 100%;
+}
+
+.reposBox {
+    width: 100%;
+    height: 40px;
+    box-shadow: 0px 0px 3px var(--rootColor);
+    border-radius: 20px;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+    color: var(--rootColor);
+}
+
+.repoText {
+    width: 50%;
+}
+
+.repoInfo{
+    width: 25%;
+    font-size: 13px;
+    justify-content: space-between;
+}
+
+.repoPage {
+    width: 15%;
+}
+
+.none {
+    display: none;
+}
+
+.red {
+    border-bottom: 2px red solid;
+}
+
+.green {
+    border-bottom: 2px rgb(0, 248, 0) solid;
+}
+
+.show {
+    display: block;
+}
+
+.notFound {
+    width: 100%;
+    text-align: center;
+    color: var(--rootColor);
+    font-size: 20px;
+    margin-top: 30px;
+    font-weight: bold;
+}
